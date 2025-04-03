@@ -141,6 +141,9 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Email Us</h4>
                   <p className="text-gray-600">
+                    <a href="mailto:odhiambo.stanley.ochieng@gmail.com" className="hover:text-infinity-600 transition-colors">
+                      odhiambo.stanley.ochieng@gmail.com
+                    </a><br />
                     info@infinityai.com<br />
                     support@infinityai.com
                   </p>
