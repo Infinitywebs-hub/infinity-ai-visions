@@ -129,8 +129,8 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Our Location</h4>
                   <p className="text-gray-600">
-                    123 Innovation Drive<br />
-                    Tech District, CA 94103
+                    Moi Avenue<br />
+                    Nairobi, Kenya.
                   </p>
                 </div>
               </div>
