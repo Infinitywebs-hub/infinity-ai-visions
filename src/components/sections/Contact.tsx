@@ -7,7 +7,8 @@ import { useToast } from "@/components/ui/use-toast";
 import { 
   Mail, 
   MapPin, 
-  Phone 
+  Phone,
+  ExternalLink
 } from "lucide-react";
 
 const Contact = () => {
@@ -141,11 +142,15 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Email Us</h4>
                   <p className="text-gray-600">
-                    <a href="mailto:odhiambo.stanley.ochieng@gmail.com" className="hover:text-infinity-600 transition-colors">
-                      odhiambo.stanley.ochieng@gmail.com
+                    <a href="mailto:odhiambo.stanley.ochieng@gmail.com" className="hover:text-infinity-600 transition-colors flex items-center">
+                      odhiambo.stanley.ochieng@gmail.com <ExternalLink className="ml-1 h-3 w-3" />
                     </a><br />
-                    info@infinityai.com<br />
-                    support@infinityai.com
+                    <a href="mailto:info@infinityai.com" className="hover:text-infinity-600 transition-colors">
+                      info@infinityai.com
+                    </a><br />
+                    <a href="mailto:support@infinityai.com" className="hover:text-infinity-600 transition-colors">
+                      support@infinityai.com
+                    </a>
                   </p>
                 </div>
               </div>
@@ -157,7 +162,9 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Call Us</h4>
                   <p className="text-gray-600">
-                    +1 (555) 123-4567<br />
+                    <a href="tel:+15551234567" className="hover:text-infinity-600 transition-colors">
+                      +1 (555) 123-4567
+                    </a><br />
                     Mon-Fri, 9am-6pm PST
                   </p>
                 </div>
@@ -167,9 +174,9 @@ const Contact = () => {
             <div className="mt-10">
               <div className="w-full h-48 bg-gray-200 rounded-lg">
                 {/* Placeholder for a map */}
-                <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Interactive Map
-                </div>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center text-gray-500 hover:text-infinity-600 transition-colors">
+                  Interactive Map <ExternalLink className="ml-1 h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>

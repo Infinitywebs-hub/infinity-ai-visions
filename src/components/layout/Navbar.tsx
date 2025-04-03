@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,12 +21,27 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    setMobileMenuOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#" className="flex items-center">
+            <a 
+              href="#" 
+              className="flex items-center"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
               <span className="text-2xl font-bold bg-gradient-to-r from-infinity-600 to-ai-600 bg-clip-text text-transparent">Infinity AI</span>
             </a>
           </div>
@@ -39,22 +55,57 @@ const Navbar = () => {
           
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-10">
-            <a href="#about" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors">
+            <a 
+              href="#about" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
+            >
               About
             </a>
-            <a href="#services" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors">
+            <a 
+              href="#services" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
+            >
               Services
             </a>
-            <a href="#features" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors">
+            <a 
+              href="#features" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('features');
+              }}
+            >
               Features
             </a>
-            <a href="#team" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors">
+            <a 
+              href="#team" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('team');
+              }}
+            >
               Team
             </a>
           </nav>
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#contact" className="btn-primary">
+            <a 
+              href="#contact" 
+              className="btn-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
+            >
               Contact Us
             </a>
           </div>
@@ -65,19 +116,54 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="absolute top-full inset-x-0 p-4 bg-white shadow-lg md:hidden rounded-b-lg transition-all duration-200 ease-in-out">
           <div className="flex flex-col space-y-4 py-2">
-            <a href="#about" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>
+            <a 
+              href="#about" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
+            >
               About
             </a>
-            <a href="#services" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>
+            <a 
+              href="#services" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
+            >
               Services
             </a>
-            <a href="#features" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>
+            <a 
+              href="#features" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('features');
+              }}
+            >
               Features
             </a>
-            <a href="#team" className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>
+            <a 
+              href="#team" 
+              className="text-base font-medium text-gray-700 hover:text-infinity-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('team');
+              }}
+            >
               Team
             </a>
-            <a href="#contact" className="btn-primary w-full text-center" onClick={() => setMobileMenuOpen(false)}>
+            <a 
+              href="#contact" 
+              className="btn-primary w-full text-center" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
+            >
               Contact Us
             </a>
           </div>
