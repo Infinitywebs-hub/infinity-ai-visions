@@ -69,12 +69,31 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Legal</h4>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Data Protection</a></li>
+              <li>
+                <a href="mailto:infinitywebshub@gmail.com" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  infinitywebshub@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+12345678901" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  (123) 456-7890
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://goo.gl/maps/1234" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  123 AI Street, San Francisco, CA
+                </a>
+              </li>
             </ul>
           </div>
         </div>
