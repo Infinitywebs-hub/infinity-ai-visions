@@ -2,28 +2,28 @@
 const Team = () => {
   const team = [
     {
-      name: "Dr. Sarah Chen",
+      name: "Stanley Odhiambo",
       role: "CEO & Chief AI Scientist",
-      bio: "Ph.D. in Computer Science with over 15 years of experience in AI research and development.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      bio: "Great mastery in Information Technology with years of experience in AI research and development.",
+     // image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
     },
     {
       name: "Michael Rodriguez",
       role: "CTO",
       bio: "Former engineering leader at major tech companies with expertise in scalable AI systems.",
-      image: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      //image: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
     },
     {
       name: "Aisha Patel",
       role: "Lead AI Engineer",
       bio: "Specialist in machine learning models with a focus on natural language processing.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      //image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
     },
     {
       name: "David Kim",
       role: "Head of Product",
       bio: "Experienced product leader focused on creating intuitive AI-powered user experiences.",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+      //image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
     }
   ];
 
