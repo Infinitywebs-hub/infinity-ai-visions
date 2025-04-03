@@ -143,13 +143,10 @@ const Contact = () => {
                   <h4 className="text-lg font-semibold mb-1">Email Us</h4>
                   <p className="text-gray-600">
                     <a href="mailto:odhiambo.stanley.ochieng@gmail.com" className="hover:text-infinity-600 transition-colors flex items-center">
-                      odhiambo.stanley.ochieng@gmail.com <ExternalLink className="ml-1 h-3 w-3" />
+                      odhiambo.stanley.ochieng@gmail.com - CEO<ExternalLink className="ml-1 h-3 w-3" />
                     </a><br />
-                    <a href="mailto:info@infinityai.com" className="hover:text-infinity-600 transition-colors">
-                      info@infinityai.com
-                    </a><br />
-                    <a href="mailto:support@infinityai.com" className="hover:text-infinity-600 transition-colors">
-                      support@infinityai.com
+                    <a href="mailto:infinitywebshub@gmail.com" className="hover:text-infinity-600 transition-colors">
+                      infinitywebshub@gmail.com
                     </a>
                   </p>
                 </div>
@@ -163,7 +160,7 @@ const Contact = () => {
                   <h4 className="text-lg font-semibold mb-1">Call Us</h4>
                   <p className="text-gray-600">
                     <a href="tel:+15551234567" className="hover:text-infinity-600 transition-colors">
-                      +1 (555) 123-4567
+                      +254768478955
                     </a><br />
                     Mon-Fri, 9am-6pm PST
                   </p>
@@ -174,7 +171,7 @@ const Contact = () => {
             <div className="mt-10">
               <div className="w-full h-48 bg-gray-200 rounded-lg">
                 {/* Placeholder for a map */}
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center text-gray-500 hover:text-infinity-600 transition-colors">
+                <a href="https://maps.google.com" target="nairobi" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center text-gray-500 hover:text-infinity-600 transition-colors">
                   Interactive Map <ExternalLink className="ml-1 h-4 w-4" />
                 </a>
               </div>
