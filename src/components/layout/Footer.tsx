@@ -78,20 +78,20 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tel:+12345678901" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                <a href="tel:+254768478955" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  (123) 456-7890
+                  +(254)7 68 478 955
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://goo.gl/maps/1234" 
+                  href="https://goo.gl/maps/Moi avenue, Nairobi, Kenya" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
                 >
                   <ExternalLink className="h-4 w-4" />
-                  123 AI Street, San Francisco, CA
+                  Moi Avenue, Nairobi, Kenya
                 </a>
               </li>
             </ul>
@@ -103,7 +103,7 @@ const Footer = () => {
             &copy; {currentYear} Infinity AI. All rights reserved.
           </p>
           <p className="text-gray-400 flex items-center">
-            Made with <Heart className="h-4 w-4 text-infinity-500 mx-1" /> in Silicon Valley
+            Made with <Heart className="h-4 w-4 text-infinity-500 mx-1" /> by Stanley Odhiambo
           </p>
         </div>
       </div>
